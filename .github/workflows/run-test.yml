@@ -27,6 +27,4 @@ jobs:
 
       - run: npx cypress run
         name: Run Cypress tests
-        env:
-          DEBUG: cypress:*
         timeout-minutes: 5
