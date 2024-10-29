@@ -19,7 +19,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
         name: Install dependencies
 
-      - run: echo ${{ secrets.CYPRESS_ENV_JSON }} > cypress.env.json
+      - run: echo "${{ secrets.CYPRESS_ENV_JSON }}" > cypress.env.json
         name: Create cypress.env.json
 
       - run: npx cypress run
